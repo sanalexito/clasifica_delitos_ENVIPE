@@ -1,7 +1,7 @@
 #"C:/Users/52552/Alexito/ejemplos_R/clasifica_delitos/ejemplo_delitos03.R"
 
-corpus<-openxlsx::read.xlsx("C:/Users/52552/Alexito/ejemplos_R/clasifica_delitos/delitos01.xlsx",sheet=3)
-delitos01<-openxlsx::read.xlsx("C:/Users/52552/Alexito/ejemplos_R/clasifica_delitos/delitos01.xlsx",sheet=2)
+corpus<-openxlsx::read.xlsx("~/clasifica_delitos/delitos01.xlsx",sheet=3)
+delitos01<-openxlsx::read.xlsx("~/delitos01.xlsx",sheet=2)
 library(tm)
 library(stringr)
 library(foreign)
@@ -11,7 +11,7 @@ library(foreign)
 #                        sep = "",          # Separator of the columns of the file
 #                        dec = ".") # Importa como data frame
 # sorted_words  <- as.table(as.matrix(raw_test)) # Convierte data frame a table
-sorted_words <- as.data.frame(read.csv("C:/Users/52552/Alexito/ejemplos_R/clasifica_delitos/sorted_words.csv"))
+sorted_words <- as.data.frame(read.csv("~/sorted_words.csv"))
 sorted_words1 <- sorted_words[,2] 
 #-------------------------------------------------------------------------------
 correct <- function(word) {
