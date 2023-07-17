@@ -1,4 +1,4 @@
-#"C:/Users/52552/Alexito/ejemplos_R/clasifica_delitos/ejemplo_delitos03.R"
+#
 
 corpus<-openxlsx::read.xlsx("~/clasifica_delitos/delitos01.xlsx",sheet=3)
 delitos01<-openxlsx::read.xlsx("~/delitos01.xlsx",sheet=2)
